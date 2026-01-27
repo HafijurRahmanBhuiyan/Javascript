@@ -24,10 +24,10 @@ console.log('');
 
 for (let num of Numbers){
     if(num%2 === 0){
-        console.log("Even number: "+num);
+        console.log("Even number: ",num);
     }
     else{
-        console.log("Odd number: "+num);
+        console.log("Odd number: ",num);
     }
 }
 
@@ -40,5 +40,5 @@ for (let num of Numbers){
     num%2 === 0 ? even.push(num) : odd.push(num);
 }
 
-console.log("Even numbers list: "+even);
-console.log("Odd numbers list: "+odd);
+console.log("Even numbers list: ",even);
+console.log("Odd numbers list: ",odd);
