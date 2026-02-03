@@ -24,7 +24,7 @@ console.log(subject.boost);
 console.log(income);
 
 // bracket Notification. 
-
+console.log(subject['teacher']);
 console.log(subject['chap ters']);
 console.log(subject['chap ters'][1]);
 
@@ -54,3 +54,52 @@ console.log(values);
 // delete 
 delete subject.boost;
 console.log(subject);
+
+
+// loop create in object. 
+// for of = Array 
+// for in = Object 
+for (const prop in subject){
+    console.log(prop, '=', subject[prop]);
+    // console.log(subject[prop]);
+}
+
+console.log('-------------------');
+
+const keys2 = Object.keys(subject);
+console.log(keys2);
+
+for (const key of keys2){
+    console.log(key, ':', subject[key]);
+}
+
+console.log('-------------------');
+console.log(subject['details']['totalMarks']);
+subject['details']['totalMarks'] = 120;
+const dt = subject['details']['totalMarks'];
+console.log(dt);
+subject.name = 'chemistry';
+const element = subject.name;
+console.log(element);
+
+console.log('-------------------');
+
+// different ways to declare object 
+
+const obj1 = new Object(
+    {
+        brand : 'Apple',
+        price : 150000,
+        color : 'silver'
+    }
+);
+console.log(obj1);
+
+const obj2  = Object.create({
+    
+        brand : 'samsung',
+        price : 80000,
+        color : 'black'
+    
+});
+console.log(obj2);
