@@ -11,4 +11,3 @@ string[0] = 'F';
 console.log(string);    //immutable ----> not changeable
 
 
-
