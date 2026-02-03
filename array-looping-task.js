@@ -81,3 +81,93 @@ for (const state of newStatement){
     emptyString = state + ' ' + emptyString;
 }
 console.log(emptyString);
+
+
+/*
+Task 5
+Copy the given array into another array so that changing the copy does not affect the original.Change the first element of the copied array to 99.
+
+Input: [1, 2, 3]
+
+Expected Output:
+
+Original: [1, 2, 3] Copy: [99, 2, 3]
+*/
+
+const input = [1, 2, 3];
+const emptyInput = [];
+for (const i of input){
+    if(input.indexOf(i) === 0){
+        emptyInput.push(99);
+    }
+    else{
+        emptyInput.push(i);
+    }
+}
+console.log('Original:', input, 'Copy:', emptyInput);
+
+
+console.log('');
+console.log('');
+
+/*
+Task 6
+Given an array of student objects, print each student’s name and marks.
+
+[
+  { name: "John", marks: 85 },
+  { name: "Alice", marks: 90 }
+]
+*/
+
+const student = {
+    array : [
+        { name: "John", marks: 85 },
+        { name: "Alice", marks: 90 }
+    ]
+}
+
+for(const i of student['array']){
+    console.log(i['name'], 'scored', i['marks']);
+}
+
+
+// console.log(student['array'][0]['name'], 'scored', student['array'][0]['marks']);
+// console.log(student['array'][1]['name'], 'scored', student['array'][1]['marks']);
+
+
+
+/*
+Task 7
+Given a 2D array, update the value at second row first item to 99 and print the updated array.
+
+input:
+
+[
+  [1, 2],
+  [3, 4],
+  [5, 6]
+]
+Expected Array:
+
+[
+  [1, 2],
+  [99, 4],
+  [5, 6]
+]
+*/
+
+console.log('');
+console.log('');
+
+const array = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+
+// console.log(array[2][1]);
+
+array[1][0] = 99;
+console.log(array);
+
